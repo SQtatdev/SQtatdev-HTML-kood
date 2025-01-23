@@ -1,0 +1,163 @@
+/* Общие стили */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Header */
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 60px;
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    z-index: 1000;
+}
+
+header .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #ff0000;
+}
+
+header .search input {
+    width: 70vh;
+    padding: 5px 10px;
+    font-size: 14px;
+}
+
+header .menu button {
+    margin-left: 10px;
+    padding: 5px 10px;
+}
+
+/* Content Wrapper */
+.left_part {
+    display: flex;
+    margin-top: 60px; /* Отступ для фиксированного header */
+    flex: 1;
+    height: calc(100vh - 100px); /* Высота экрана без header и footer */
+    overflow: scroll;
+}
+
+.you {
+    width: 25%;
+    background-color: #fff;
+    padding: 20px;
+}
+
+.Subs {
+    width: 25%;
+    background-color: #fff;
+}
+
+.you h2 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.you ul {
+    list-style: none;
+}
+
+.you li {
+    margin-bottom: 10px;
+}
+
+.you a {
+    text-decoration: none;
+    color: #555;
+    font-size: 14px;
+}
+
+.you a:hover {
+    color: #ff0000;
+}
+
+.channels h2 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.channels ul {
+    list-style: none;
+}
+
+.channels li {
+    margin-bottom: 10px;
+}
+
+.channels a {
+    text-decoration: none;
+    color: #555;
+    font-size: 14px;
+}
+
+.channels a:hover {
+    color: #ff0000;
+}
+
+/* Video Grid Section */
+.video-grid {
+    flex: 1;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    overflow-y: auto;
+    background-color: #f9f9f9;
+}
+
+.video {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.video img {
+    width: 100%;
+    height: auto;
+}
+
+.video .info {
+    padding: 10px;
+}
+
+.video .info .title {
+    font-size: 16px;
+    font-weight: bold;
+    color: #000;
+}
+
+/* Footer */
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 40px;
+    background-color: #fff;
+    border-top: 1px solid #ddd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    color: #666;
+}
